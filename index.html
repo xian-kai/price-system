@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171a1c" />
+    <title>曜石云 · 岩板报价系统</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#" aria-label="曜石云首页">
+          <span class="brand-mark"><i></i><i></i></span>
+          <span><b>曜石云</b><small>STONE ERP</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="主导航">
+          <p>业务工作台</p>
+          <a class="nav-item active" href="#"><span class="icon">⌂</span>首页</a>
+          <a class="nav-item" href="#"><span class="icon">◫</span>我的流程<span class="badge">6</span></a>
+          <a class="nav-item" href="#"><span class="icon">♙</span>客户关系</a>
+          <p>销售管理</p>
+          <button class="nav-item nav-parent open"><span class="icon">▤</span>销售合同<span class="chevron">⌃</span></button>
+          <div class="subnav">
+            <a href="#">报价单</a><a href="#">报价管理</a><a href="#">合同下单</a><a href="#">合同管理</a>
+          </div>
+          <a class="nav-item" href="#"><span class="icon">▥</span>统计看板</a>
+          <a class="nav-item" href="#"><span class="icon">◇</span>产品与库存</a>
+          <p>配置中心</p>
+          <a class="nav-item" href="#"><span class="icon">⚙</span>系统管理</a>
+        </nav>
+
+        <div class="help-card">
+          <span>?</span><div><b>需要帮助？</b><small>查看快速上手指南</small></div><i>›</i>
+        </div>
+        <div class="user-card">
+          <div class="avatar">林</div><div><b>林致远</b><small>销售总监</small></div><button aria-label="更多">•••</button>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div class="crumb">工作台 <span>/</span> 首页</div>
+          <div class="top-actions">
+            <label class="search"><span>⌕</span><input placeholder="搜索客户、合同、报价单" /><kbd>⌘ K</kbd></label>
+            <button class="round" aria-label="消息">♢<em></em></button>
+            <button class="round" aria-label="全屏">⛶</button>
+            <button class="primary small" id="topQuote">＋ 新建报价</button>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="welcome">
+            <div><p>8月1日 · 星期六</p><h1>早上好，林致远 <span>👋</span></h1><p class="muted">今天有 6 个待办事项，2 份报价即将到期。</p></div>
+            <div class="weather"><span>◉</span><div><b>佛山 · 32°C</b><small>晴朗，适合拜访客户</small></div></div>
+          </section>
+
+          <section class="metrics">
+            <article><div class="metric-head"><span class="metric-icon gold">¥</span><span>本月销售额</span><i>•••</i></div><strong>¥ 2,486,500</strong><p><b class="up">↗ 18.6%</b> 较上月</p><div class="spark gold-spark"><i></i></div></article>
+            <article><div class="metric-head"><span class="metric-icon blue">▤</span><span>本月报价</span><i>•••</i></div><strong>186 <small>份</small></strong><p><b class="up">↗ 12.4%</b> 较上月</p><div class="spark blue-spark"><i></i></div></article>
+            <article><div class="metric-head"><span class="metric-icon purple">◫</span><span>待签合同</span><i>•••</i></div><strong>28 <small>份</small></strong><p><b class="warn">8 份</b> 将于本周到期</p><div class="spark purple-spark"><i></i></div></article>
+            <article><div class="metric-head"><span class="metric-icon green">♙</span><span>新增客户</span><i>•••</i></div><strong>42 <small>家</small></strong><p><b class="up">↗ 8.2%</b> 较上月</p><div class="spark green-spark"><i></i></div></article>
+          </section>
+
+          <section class="workspace-grid">
+            <article class="panel sales-panel">
+              <div class="panel-title"><div><h2>销售趋势</h2><p>近 6 个月销售金额及回款情况</p></div><div class="legend"><i class="dark-dot"></i>销售额 <i class="gold-dot"></i>回款额 <button>近半年⌄</button></div></div>
+              <div class="chart-wrap">
+                <div class="y-axis"><span>300万</span><span>240万</span><span>180万</span><span>120万</span><span>60万</span><span>0</span></div>
+                <div class="chart">
+                  <div class="gridline"></div><div class="gridline"></div><div class="gridline"></div><div class="gridline"></div><div class="gridline"></div>
+                  <svg viewBox="0 0 700 220" preserveAspectRatio="none" aria-label="销售趋势折线图">
+                    <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#202424" stop-opacity=".14"/><stop offset="1" stop-color="#202424" stop-opacity="0"/></linearGradient></defs>
+                    <path class="area" d="M0,164 C55,150 70,118 118,128 S190,165 238,122 S315,78 350,96 S420,144 470,105 S545,52 584,75 S650,54 700,32 L700,220 L0,220Z"/>
+                    <path class="line main-line" d="M0,164 C55,150 70,118 118,128 S190,165 238,122 S315,78 350,96 S420,144 470,105 S545,52 584,75 S650,54 700,32"/>
+                    <path class="line pay-line" d="M0,184 C55,176 80,146 118,154 S190,187 238,151 S310,112 350,123 S420,165 470,139 S540,90 584,104 S652,88 700,76"/>
+                    <circle cx="584" cy="75" r="5" class="point"/>
+                  </svg>
+                  <div class="tooltip"><small>2026年7月</small><b>¥ 2,486,500</b><span>回款 ¥ 1,986,000</span></div>
+                  <div class="x-axis"><span>2月</span><span>3月</span><span>4月</span><span>5月</span><span>6月</span><span>7月</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel todo-panel">
+              <div class="panel-title"><div><h2>我的待办</h2><p>今日需优先处理</p></div><a href="#">查看全部 →</a></div>
+              <div class="todo-tabs"><button class="active">待处理 <b>6</b></button><button>我发起的</button><button>已完成</button></div>
+              <div class="todo-list">
+                <label><input type="checkbox"><i></i><div><b>报价单审批</b><p>深圳优品家居 · QT20260728016</p></div><time>10:30</time></label>
+                <label><input type="checkbox"><i></i><div><b>合同盖章确认</b><p>佛山大境设计 · HT20260726008</p></div><time>今天</time></label>
+                <label><input type="checkbox"><i></i><div><b>客户回访提醒</b><p>广州木语空间 · 陈女士</p></div><time>14:00</time></label>
+                <label><input type="checkbox"><i></i><div><b>订单排产确认</b><p>东莞星艺装饰 · DD20260725012</p></div><time>明天</time></label>
+              </div>
+              <button class="add-task">＋ 添加待办事项</button>
+            </article>
+          </section>
+
+          <section class="bottom-grid">
+            <article class="panel quick-panel"><div class="panel-title"><div><h2>快捷入口</h2><p>高频业务，一键直达</p></div></div><div class="quick-grid">
+              <button data-open-quote><span class="quick-icon amber">▤</span><b>智能报价</b><small>快速生成报价单</small></button>
+              <button><span class="quick-icon ink">＋</span><b>新建客户</b><small>录入客户信息</small></button>
+              <button><span class="quick-icon lilac">▣</span><b>合同下单</b><small>创建销售合同</small></button>
+              <button id="configBtn"><span class="quick-icon sage">⚙</span><b>定制项配置</b><small>维护加工与价格</small></button>
+            </div></article>
+            <article class="panel ranking"><div class="panel-title"><div><h2>产品销售排行</h2><p>本月按销售额排名</p></div><a href="#">查看明细 →</a></div><div class="rank-list">
+              <div><span class="rank gold-rank">1</span><span class="stone s1"></span><p><b>雪山银狐</b><small>1600 × 3200 × 12mm</small></p><strong>¥ 368,500</strong></div>
+              <div><span class="rank silver-rank">2</span><span class="stone s2"></span><p><b>潘多拉</b><small>1600 × 3200 × 12mm</small></p><strong>¥ 286,800</strong></div>
+              <div><span class="rank bronze-rank">3</span><span class="stone s3"></span><p><b>劳伦黑金</b><small>1200 × 2400 × 9mm</small></p><strong>¥ 218,600</strong></div>
+            </div></article>
+          </section>
+          <footer>数据更新于 2026-08-01 09:28 <span>曜石云 Stone ERP · 企业版</span></footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="quoteModal" aria-hidden="true">
+      <section class="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+        <div class="modal-head"><div><small>SMART QUOTATION</small><h2 id="quoteTitle">创建智能报价</h2><p>选择材料与加工工艺，系统将自动核算最优价格</p></div><button class="close" aria-label="关闭">×</button></div>
+        <div class="steps"><span class="active"><i>1</i>材料规格</span><b></b><span><i>2</i>定制工艺</span><b></b><span><i>3</i>确认报价</span></div>
+        <form id="quoteForm">
+          <div class="form-grid">
+            <label>客户名称<input value="深圳优品家居有限公司" /></label>
+            <label>产品系列<select><option>奢石系列</option><option>经典大理石系列</option><option>素色系列</option></select></label>
+            <label>岩板花色<select id="material"><option value="268">雪山银狐 · ¥268/㎡</option><option value="328">潘多拉 · ¥328/㎡</option><option value="298">劳伦黑金 · ¥298/㎡</option></select></label>
+            <label>板材规格<select id="size"><option value="5.12">1600 × 3200 × 12mm</option><option value="2.88">1200 × 2400 × 9mm</option><option value="3.60">1200 × 3000 × 6mm</option></select></label>
+            <label>采购数量<div class="number-field"><button type="button" data-count="-1">−</button><input id="quantity" type="number" value="12" min="1"/><button type="button" data-count="1">＋</button></div></label>
+            <label>损耗率<select id="waste"><option value="1.08">标准 8%</option><option value="1.12">异形 12%</option><option value="1.15">复杂 15%</option></select></label>
+          </div>
+          <fieldset><legend>定制加工 <small>可多选</small></legend><div class="custom-options">
+            <label><input type="checkbox" value="18" checked><span><i>◒</i><b>精切加工</b><small>¥18 / 延米</small></span></label>
+            <label><input type="checkbox" value="35"><span><i>⌒</i><b>磨边倒角</b><small>¥35 / 延米</small></span></label>
+            <label><input type="checkbox" value="80"><span><i>○</i><b>水刀开孔</b><small>¥80 / 个</small></span></label>
+            <label><input type="checkbox" value="120"><span><i>⌁</i><b>异形加工</b><small>¥120 / ㎡</small></span></label>
+          </div></fieldset>
+          <div class="quote-summary"><div><small>材料金额</small><b id="materialPrice">¥ 17,779.51</b></div><div><small>加工费用</small><b id="processPrice">¥ 216.00</b></div><div class="total"><small>预估报价 <em>含税</em></small><strong id="totalPrice">¥ 17,995.51</strong></div></div>
+          <div class="modal-actions"><button type="button" class="ghost close-action">保存草稿</button><button type="submit" class="primary">下一步：定制工艺 →</button></div>
+        </form>
+      </section>
+    </div>
+    <div class="toast" id="toast"><span>✓</span><div><b>报价草稿已创建</b><small>可前往报价管理继续编辑</small></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
