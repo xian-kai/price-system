@@ -1,0 +1,12 @@
+{
+  "name": "obsidian-stone-erp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "岩板销售与智能报价管理系统",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check script.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}

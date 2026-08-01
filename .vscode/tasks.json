@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "启动曜石云",
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^> obsidian-stone-erp@.* start$",
+          "endsPattern": "^曜石云已启动：http://localhost:[0-9]+$"
+        }
+      },
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "运行项目检查",
+      "type": "npm",
+      "script": "check",
+      "problemMatcher": []
+    },
+    {
+      "label": "运行后端测试",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": []
+    }
+  ]
+}
