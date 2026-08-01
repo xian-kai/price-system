@@ -1,0 +1,32 @@
+{
+  "company": {"name":"曜石岩板科技","userName":"冼国楷","role":"销售总监","taxRate":13},
+  "customers": [
+    {"id":"CUS-001","name":"深圳优品家居有限公司","contact":"陈女士","phone":"138****7612","level":"重点客户","owner":"冼国楷","updatedAt":"2026-08-01"},
+    {"id":"CUS-002","name":"佛山大境设计有限公司","contact":"周先生","phone":"139****2086","level":"战略客户","owner":"冼国楷","updatedAt":"2026-07-30"},
+    {"id":"CUS-003","name":"广州木语空间设计","contact":"李女士","phone":"136****5031","level":"普通客户","owner":"王明","updatedAt":"2026-07-28"}
+  ],
+  "products": [
+    {"id":"MAT-001","name":"雪山银狐","series":"奢石系列","spec":"1600 × 3200 × 12mm","price":268,"stock":126},
+    {"id":"MAT-002","name":"潘多拉","series":"奢石系列","spec":"1600 × 3200 × 12mm","price":328,"stock":82},
+    {"id":"MAT-003","name":"劳伦黑金","series":"经典大理石系列","spec":"1200 × 2400 × 9mm","price":298,"stock":64}
+  ],
+  "customizations": [
+    {"id":"CUS-P01","name":"精切加工","unit":"延米","price":18,"enabled":true},
+    {"id":"CUS-P02","name":"磨边倒角","unit":"延米","price":35,"enabled":true},
+    {"id":"CUS-P03","name":"水刀开孔","unit":"个","price":80,"enabled":true},
+    {"id":"CUS-P04","name":"异形加工","unit":"平方米","price":120,"enabled":true}
+  ],
+  "quotes": [
+    {"id":"QT20260728016","customer":"深圳优品家居有限公司","material":"雪山银狐","amount":17995.51,"status":"待审批","createdAt":"2026-07-28"},
+    {"id":"QT20260726008","customer":"佛山大境设计有限公司","material":"潘多拉","amount":28680,"status":"已通过","createdAt":"2026-07-26"}
+  ],
+  "contracts": [
+    {"id":"HT20260726008","customer":"佛山大境设计有限公司","amount":28680,"status":"待盖章","delivery":"2026-08-18"},
+    {"id":"HT20260718003","customer":"广州木语空间设计","amount":52600,"status":"生产中","delivery":"2026-08-12"}
+  ],
+  "workflows": [
+    {"id":"WF-001","title":"报价单审批","detail":"深圳优品家居 · QT20260728016","status":"待处理","due":"今天 10:30"},
+    {"id":"WF-002","title":"合同盖章确认","detail":"佛山大境设计 · HT20260726008","status":"待处理","due":"今天"},
+    {"id":"WF-003","title":"订单排产确认","detail":"东莞星艺装饰 · DD20260725012","status":"待处理","due":"明天"}
+  ]
+}
